@@ -10,7 +10,7 @@
   }
   
   .container {
-    height: 70vh;
+    height: 68vh;
     width: 80vh;
     border-radius: 30px;
     display: flex;
@@ -68,7 +68,7 @@
     --button_radius: 0.75em;
     --button_color: #e8e8e8;
     --button_outline_color: #000000;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     border: none;
     border-radius: var(--button_radius);
@@ -80,7 +80,7 @@
     box-sizing: border-box;
     border: 2px solid var(--button_outline_color);
     border-radius: var(--button_radius);
-    padding: 0.75em 1.5em;
+    padding: 0.7em 1.5em;
     background: var(--button_color);
     color: var(--button_outline_color);
     transform: translateY(-0.2em);
@@ -148,7 +148,6 @@
     filter: drop-shadow(0 0 23px var(--animation-color))
   }
   
-  
   /* new game button*/
   
   .newgameBtn {
@@ -195,4 +194,125 @@
   .showWin{
     margin: 0px;
     padding: 0px;;
+  }
+
+  @media (max-width:450px){
+
+    .container {
+        height: 75vh;
+        width: 135%;
+    }
+    .boxes{
+        height: 150vmin;
+        width: 150vmin;
+        gap:1.6vmin;
+    }
+
+    .box{
+        font-size: 34vmin;
+    }
+
+    .resetBtn {
+        font-size: 50px;
+        margin-left: 170px;
+        margin-top: 30px;
+    }
+
+    .newgameBtn {
+        margin-left: 42%;
+        width: 245px;
+        height: 82px;
+        font-size: 2.125em;
+    }
+
+    .but{
+        height: 130px;
+        width: 450px;
+        --fs-size: 60px;
+        padding-top: 30px;
+        margin-left: 60px;
+        position: relative;
+        --border-right: 6px;
+        --text-stroke-color: rgba(255, 255, 255, 0.6);
+        --animation-color: #ff9437;
+        letter-spacing: 3px;
+        text-decoration: none;
+        font-size: var(--fs-size);
+        font-family: "Arial";
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px var(--text-stroke-color);
+    }
+
+    .hover-text {
+        padding-top: 30px;
+    }
+
+    .but:hover .hover-text {
+        padding-top: 30px;
+    }
+
+    .showWin{
+        margin-left: 173px;
+      }
+  }
+
+  @media (min-width:450px) and (max-width:700px) {
+    .container {
+        height: 60vh;
+        width: 100%;
+    }
+    .boxes{
+        height: 100vmin;
+        width: 100vmin;
+        gap:0.8vmin;
+    }
+
+    .box{
+        font-size: 22vmin;
+    }
+
+    .resetBtn {
+        font-size: 40px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .newgameBtn {
+        margin-left: 32%;
+        width: 220px;
+        height: 64px;
+        font-size: 2em;
+    }
+
+    .but{
+        height: 130px;
+        width: 450px;
+        --fs-size: 60px;
+        padding-top: 30px;
+        margin-left: 60px;
+        position: relative;
+        --border-right: 6px;
+        --text-stroke-color: rgba(255, 255, 255, 0.6);
+        --animation-color: #ff9437;
+        letter-spacing: 3px;
+        text-decoration: none;
+        font-size: var(--fs-size);
+        font-family: "Arial";
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px var(--text-stroke-color);
+    }
+
+    .hover-text {
+        padding-top: 30px;
+    }
+
+    .but:hover .hover-text {
+        padding-top: 30px;
+    }
+
+    .showWin{
+        margin-left: 27px;
+      }
   }

@@ -68,7 +68,7 @@ const checkWinner = () =>{
 
 //winner board is hidden , showes up when checkWinner(); calls..
 const showWinner = (winner) =>{
-    showWin.innerText=`🏆 Winner is ${winner} 🏅`;
+    showWin.innerText=`🏅 Winner ${winner} 🏆`;
     hiddenMsg.classList.remove("hide");
 };
 
